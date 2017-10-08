@@ -1,0 +1,6 @@
+h1 {
+	font-size: rem(82px);
+	@include laptop {
+		font-size: rem(14px);
+	}
+}
