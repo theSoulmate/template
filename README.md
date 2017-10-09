@@ -1,3 +1,4 @@
 # my-gulp
 Start template for new projects
-by 09.10.2017
+by Gulp
+09.10.2017
