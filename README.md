@@ -1,3 +1,3 @@
 # my-gulp
-Gulp_tasks
-lalala
+Start template for new projects
+by 09.10.2017
