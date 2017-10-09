@@ -35,5 +35,7 @@
     "url": "https://github.com/theSoulmate/my-gulp/issues"
   },
   "homepage": "https://github.com/theSoulmate/my-gulp#readme",
-  "dependencies": {}
+  "dependencies": {
+    "jquery": "^1.12.4"
+  }
 }
