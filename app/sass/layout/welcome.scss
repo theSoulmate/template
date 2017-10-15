@@ -1,0 +1,123 @@
+.welcome {
+	background-image: url("../img/main-bg.png");
+	min-height: 100vh;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 10px;
+}
+
+.top-line {
+	position: absolute;
+	top: 35px;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	height: 50px;
+	@include mobile {
+		justify-content: center;
+	}
+}
+
+.auth-btn__link {
+	color: #fff;
+	font-family: Roboto;
+	padding: 12px 29px;
+	border: 1px solid #fff;
+	text-decoration: none;
+	border-radius: 5px;
+	transition: background-color .3s, color .3s;
+	margin-right: 100px;
+	&:hover {
+		color: $light-green;
+		background-color: #FFF;
+	}
+	@include mobile {
+		margin: 0;
+	}
+}
+
+.auth {
+	width: rem(380px);
+	height: rem(396px);
+	background-color: rgba(255,255,255,.85);
+	border-radius: 5px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.auth__user {
+	padding: 40px 0 0 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+.user__photo-pic {
+	border-radius: 50%;
+	width: 145px;
+	height: 145px;
+}
+
+.user__title {
+	font-size: rem(28px);
+	font-family: Roboto;
+	color: $light-txt;
+	font-weight: 500;
+	margin-top: 10px;	
+}
+
+.user__desc {
+	font-size: rem(16px);
+	font-family: Roboto;
+	color: $light-txt;
+	font-weight: 300;
+	margin-top: 5px;
+}
+
+.user__socials {
+	font-size: rem(26px);
+	margin-top: 30px;
+}
+
+.user__socials-link {
+	margin: 0 13px;
+	color: $light-green;
+	opacity: .5;
+	transition: opacity .2s;
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.auth__btns {
+	height: 45px;
+	display: flex;
+}
+
+.auth__btn-link {
+	width: 100%;
+	padding: 10px;
+	background-color: $light-green;
+	color: #fff;
+	line-height: 25px;
+	text-decoration: none;
+	font-family: Roboto;
+	text-align: center;
+	transition: background-color .2s;
+	&:hover {
+		background-color: $dark-green;
+	}
+	@include mobile {
+		font-size: rem(12px);
+	}
+}
+
+.auth__btn-link:nth-child(2) {
+	border-left: 1px solid rgba(222,227,231,.5);
+	border-right: 1px solid rgba(222,227,231,.5);
+}

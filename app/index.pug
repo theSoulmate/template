@@ -11,7 +11,30 @@ html(lang="ru")
 		link(rel="stylesheet", href="css/main.min.css")
 
 	body
-		h1 Приветик!!!
+		.welcome
+			.top-line
+				.top-line__auth-btn
+					a.auth-btn__link(href="#") Авторизоваться
+			.auth
+				.auth__user
+					.user__photo
+						img(src="img/i.png", alt="").user__photo-pic
+					.user__title Паньшин Олег
+					.user__desc Личный сайт веб разработчика
+					.user__socials
+						a.user__socials-link(href="#", title="vk")
+							i.fa.fa-vk(aria-hidden="true")
+						a.user__socials-link(href="#", title="github")
+							i.fa.fa-github-alt(aria-hidden="true")
+						a.user__socials-link(href="#", title="linkedin")
+							i.fa.fa-linkedin(aria-hidden="true")
+				.auth__btns
+					a.auth__btn-link(href="#") Мои работы
+					a.auth__btn-link(href="#") Обо мне
+					a.auth__btn-link(href="#") Блог
+
+
+
 		
 
 
