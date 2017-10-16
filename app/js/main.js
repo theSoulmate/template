@@ -1,7 +1,20 @@
-const foo = 5;
+var parallaxContainer = document.getElementById('parallax'),
+	layers = parallaxContainer.children;
 
-function getSum(a, b) {
-	return a + b;
+var moveLayers = function(e) {
+	var initialX = (window.innerWidth/2) - e.pageX,
+		initialY = (window.innerHeight/2) - e.pageY;
+
+	[].slice.call(layers).forEach(function(layer, i){
+		var divider = i/100,
+			positionX = initialX*divider,
+			positionY = initialY*divider,
+			layerStyle = layer.style,
+			transformString = 'translate3d(' + positionX +'px ,'+ positionY +'px ,0)';
+			
+		layerStyle.transform = transformString;
+	});
+		
 }
 
-getSum(foo, foo);
+window.addEventListener('mousemove', moveLayers);
