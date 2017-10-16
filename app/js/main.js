@@ -14,7 +14,6 @@ var moveLayers = function(e) {
 			
 		layerStyle.transform = transformString;
 	});
-		
 }
 
 window.addEventListener('mousemove', moveLayers);
